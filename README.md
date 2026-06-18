@@ -1,3 +1,30 @@
+
+![alt text](image-1.png)
+
+Es hat README's für die Themen ^ mit Fragen und Antworten in diesem Repo.
+
+### custom hooks
+Das kännte als custom hook gemacht werden
+```
+const onDelete = () => {
+  if (state) {
+    deleteFn();
+  }
+  setState(true)
+}
+```
+- toast mit useWithMessage hook gelöst
+  - wir müssen bei der Prüfung nicht eigene customHooks schreiben, aber es wissen.
+
+
+
+Weitere Themen angeschaut
+- useEffect
+- `<T>` in Typescript statt any
+- 
+
+
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

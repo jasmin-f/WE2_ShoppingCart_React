@@ -1,6 +1,7 @@
 import { Alert, Box, Snackbar } from "@mui/material";
 import { Outlet } from "react-router-dom";
 import { Appbar } from "../components/app-bar";
+import { OutputComponentName } from "../components/output-component-name";
 import { useUiStore, useUiActions } from "../state/ui-store";
 
 export const Layout = () => {
@@ -38,7 +39,9 @@ export const Layout = () => {
         height: "100%",
         overflow: "auto",
       }}>
-        <Outlet />
+      <OutputComponentName>Layout</OutputComponentName>
+
+        <Outlet /> {/* damit children auch angezeigt werden */}
       </Box>
     </Box>
   );

@@ -29,6 +29,7 @@ import { useListStore, useListActions } from "../state/list-store";
 import { useItemStore, useItemActions } from "../state/item-store";
 import { useUiStore, useUiActions } from "../state/ui-store";
 import { useWithMessage } from "../hooks/use-with-message";
+import { OutputComponentName } from "../components/output-component-name";
 
 export const ShoppingList = () => {
   const lists = useListStore((s) => s.items);
@@ -101,6 +102,7 @@ export const ShoppingList = () => {
   return (
     <>
       <Box sx={{ overflow: "auto", flex: "1 1 100%" }}>
+                  <OutputComponentName>Shopping List</OutputComponentName>
         {currentListId ? (
           <>
             {Object.values(items).filter((x) => x.listId === currentListId)

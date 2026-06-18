@@ -3,6 +3,7 @@ import CheckIcon from "@mui/icons-material/Check";
 import ClearIcon from "@mui/icons-material/Clear";
 import { Button, Card, CardActions, CardContent, Typography } from "@mui/material";
 import { useListActions } from "../state/list-store";
+import { OutputComponentName } from "../components/output-component-name";
 
 export const SharedList = () => {
   const params = useParams();
@@ -21,6 +22,8 @@ export const SharedList = () => {
 
   return (
     <div>
+          <OutputComponentName>Share</OutputComponentName>
+    
       <Card sx={{ margin: "10px" }}>
         <CardContent sx={{ textAlign: "start" }}>
           <Typography variant="h4">Shared List</Typography>

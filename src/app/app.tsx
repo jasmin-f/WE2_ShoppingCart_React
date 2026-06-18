@@ -17,8 +17,8 @@ const AppContent = () => {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Layout />}>
-            <Route index element={<Navigate to="list" />} />
+          <Route path="/" element={<Layout />}> 
+            <Route path="/" element={<Navigate to="list" />} />
             <Route path="list" element={<ShoppingList />}>
               <Route path=":id" element={<ShoppingList />} />
             </Route>
@@ -29,6 +29,8 @@ const AppContent = () => {
           </Route>
         </Routes>
       </BrowserRouter>
+
+    
     </div>
   );
 };
