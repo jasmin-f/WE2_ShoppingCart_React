@@ -4,7 +4,7 @@
 Es hat README's für die Themen ^ mit Fragen und Antworten in diesem Repo.
 
 ### custom hooks
-Das kännte als custom hook gemacht werden
+Das könnte als custom hook gemacht werden
 ```
 const onDelete = () => {
   if (state) {
@@ -21,7 +21,7 @@ const onDelete = () => {
 Weitere Themen angeschaut
 - useEffect
 - `<T>` in Typescript statt any
-- 
+
 
 
 
